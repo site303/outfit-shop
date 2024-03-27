@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
-    <!-- <link rel="stylesheet" href="css/simple-adaptive-slider.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <title>Store</title>
 </head>
@@ -50,27 +49,25 @@
 
                 <div class="header__menu-right">
 
-                    <div class="custom-row">
-                        <div class="custom-col">
-                            <div class="input-group">
-                                <div class="input-group-btn search-panel">
-                                    <div class="dropdown">
-                                        <button class="dropbtn">Меню</button>
-                                        <div class="dropdown-content">
-                                            <a href="#">Ссылка 1</a>
-                                            <a href="#">Ссылка 2</a>
-                                            <a href="#">Ссылка 3</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                 <div class="search-box">
-                                     <input type="text" placeholder="Search...">
-                                     <button class="search-btn" type="submit">
-                                     </button>
-                                 </div>
+                    <div class="search-container">
+                        <div class="dropdown">
+                            <button class="dropbtn buy-btn">Меню</button>
+                            <div class="dropdown-content">
+                                <a href="#">Ссылка 1</a>
+                                <a href="#">Ссылка 2</a>
+                                <a href="#">Ссылка 3</a>
                             </div>
                         </div>
+
+                        <div class="search-box">
+                            <input type="text" placeholder="Search...">
+                            <button class="search-btn" type="submit">
+                            </button>
+                        </div>
+
                     </div>
+
+
 
                     <svg width="60px" height="60px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -89,63 +86,63 @@
             </div>
         </div>
     </header>
-   <section class="shop-slider">
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img class="img_journey" src="img/journey.jpg" height="1000px" style="width:100%">
-            <div class="slide-1_text slide-text">Одежда для путешествий</div>
-        </div>
-    
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="img/lake-clothes.jpg" height="1000px" style="width:100%">
-            <div class="slide-2_text slide-text">Наслаждайся в любую погоду</div>
-        </div>
-    
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="img/beach.jpg" style="width:100%">
-            <div class="slide-3_text slide-text">К пляжному сезону готовы</div>
-        </div>
-    
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
-    
-        <div class="dots">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>
-    </div>
+    <section class="shop-slider">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img class="img_journey" src="img/journey.jpg" height="1000px" style="width:100%">
+                <div class="slide-1_text slide-text">Одежда для путешествий</div>
+            </div>
 
-</section>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="img/lake-clothes.jpg" height="1000px" style="width:100%">
+                <div class="slide-2_text slide-text">Наслаждайся в любую погоду</div>
+            </div>
 
-<section class="collection">
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="img/beach.jpg" style="width:100%">
+                <div class="slide-3_text slide-text">К пляжному сезону готовы</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="collection">
         <div class="container">
             <h1 class="collection__title title">
                 Новая коллекция
             </h1>
-            <div class="grid-container">
-                <div class="grid-item1 grid-item">
+            <div class="collection__top-container">
+                <div class="grid-item1 collection__top-item">
                     <img src="img/collection-1.jpg" height="890px" alt="collection-1">
                     <a class="overlay" href="#">
                         <div class="collection-text">Комбинезоны</div>
                     </a>
                 </div>
-                <div class="grid-item2 grid-item">
+                <div class="grid-item2 collection__top-item">
                     <img src="img/collection-2.jpg" height="450px" alt="collection-2">
                     <a class="overlay" href="#">
                         <div class="collection-text">Аксессуары</div>
                     </a>
                 </div>
-                <div class="grid-item3 grid-item">
+                <div class="grid-item3 collection__top-item">
                     <img src="img/collection-3.jpg" height="450px" alt="collection-3">
                     <a class="overlay" href="#">
                         <div class="collection-text">Гаджеты</div>
                     </a>
                 </div>
-                <div class="grid-item4 grid-item">
+                <div class="grid-item4 collection__top-item">
                     <img src="img/collection-4.jpg" width="1000px" height="418px" alt="collection-4">
                     <a class="overlay" href="#">
                         <div class="collection-text">На каждый день</div>
@@ -153,34 +150,340 @@
                 </div>
             </div>
         </div>
+        <div class="collection__bottom-container container">
+            <div class="collection__bottom-menu">
+                <button class="collection__bottom-btn">
+                    Футболки
+                </button>
+                <button class="collection__bottom-btn">
+                    Кофты
+                </button>
+                <button class="collection__bottom-btn">
+                    Джинсы
+                </button>
+            </div>
+            <div class="collection__bottom-content">
+                <div class="collection__bottom-cards">
+                    <div class="collection__bottom-card">
+                        <h4>Футболка из 100% хлопка</h4>
+                        <img src="img/t-shirt.png" width="230px" height="200px" alt="outfit">
+                        <p class="collection__bottom-card_price">800₽ <span>1200₽</span></p>
+                        <p class="collection__bottom-card_descr"> Lorem ipsum dolor sit amet consectetur</p>
+                        <button class="collection__bottom-card_btn buy-btn">
+                            В корзину
+                        </button>
+
+                    </div>
+                    <div class="collection__bottom-card">
+                        <h4>Футболка из 100% хлопка</h4>
+                        <img src="img/t-shirt.png" width="230px" height="200px" alt="outfit">
+                        <p class="collection__bottom-card_price">800₽ <span>1200₽</span></p>
+                        <p class="collection__bottom-card_descr"> Lorem ipsum dolor sit amet consectetur</p>
+                        <button class="collection__bottom-card_btn buy-btn">
+                            В корзину
+                        </button>
+
+                    </div>
+                    <div class="collection__bottom-card">
+                        <h4>Футболка из 100% хлопка</h4>
+                        <img src="img/t-shirt.png" width="230px" height="200px" alt="outfit">
+                        <p class="collection__bottom-card_price">800₽ <span>1200₽</span></p>
+                        <p class="collection__bottom-card_descr"> Lorem ipsum dolor sit amet consectetur</p>
+                        <button class="collection__bottom-card_btn buy-btn">
+                            В корзину
+                        </button>
+
+                    </div>
+                    <div class="collection__bottom-card">
+                        <h4>Футболка из 100% хлопка</h4>
+                        <img src="img/t-shirt.png" width="230px" height="200px" alt="outfit">
+                        <p class="collection__bottom-card_price">800₽ <span>1200₽</span></p>
+                        <p class="collection__bottom-card_descr"> Lorem ipsum dolor sit amet consectetur</p>
+                        <button class="collection__bottom-card_btn buy-btn">
+                            В корзину
+                        </button>
+
+                    </div>
+                    <div class="collection__bottom-card">
+                        <h4>Футболка из 100% хлопка</h4>
+                        <img src="img/t-shirt.png" width="230px" height="200px" alt="outfit">
+                        <p class="collection__bottom-card_price">800₽ <span>1200₽</span></p>
+                        <p class="collection__bottom-card_descr"> Lorem ipsum dolor sit amet consectetur</p>
+                        <button class="collection__bottom-card_btn buy-btn">
+                            В корзину
+                        </button>
+
+                    </div>
+                    <div class="collection__bottom-card">
+                        <h4>Футболка из 100% хлопка</h4>
+                        <img src="img/t-shirt.png" width="230px" height="200px" alt="outfit">
+                        <p class="collection__bottom-card_price">800₽ <span>1200₽</span></p>
+                        <p class="collection__bottom-card_descr"> Lorem ipsum dolor sit amet consectetur</p>
+                        <button class="collection__bottom-card_btn buy-btn">
+                            В корзину
+                        </button>
+
+                    </div>
+                    <div class="collection__bottom-card">
+                        <h4>Футболка из 100% хлопка</h4>
+                        <img src="img/t-shirt.png" width="230px" height="200px" alt="outfit">
+                        <p class="collection__bottom-card_price">800₽ <span>1200₽</span></p>
+                        <p class="collection__bottom-card_descr"> Lorem ipsum dolor sit amet consectetur</p>
+                        <button class="collection__bottom-card_btn buy-btn">
+                            В корзину
+                        </button>
+
+                    </div>
+                    <div class="collection__bottom-card">
+                        <h4>Футболка из 100% хлопка</h4>
+                        <img src="img/t-shirt.png" width="230px" height="200px" alt="outfit">
+                        <p class="collection__bottom-card_price">800₽ <span>1200₽</span></p>
+                        <p class="collection__bottom-card_descr"> Lorem ipsum dolor sit amet consectetur</p>
+                        <button class="collection__bottom-card_btn buy-btn">
+                            В корзину
+                        </button>
+
+                    </div>
+                    <div class="collection__bottom-card">
+                        <h4>Футболка из 100% хлопка</h4>
+                        <img src="img/t-shirt.png" width="230px" height="200px" alt="outfit">
+                        <p class="collection__bottom-card_price">800₽ <span>1200₽</span></p>
+                        <p class="collection__bottom-card_descr"> Lorem ipsum dolor sit amet consectetur</p>
+                        <button class="collection__bottom-card_btn buy-btn">
+                            В корзину
+                        </button>
+
+                    </div>
+                    <div class="collection__bottom-card">
+                        <h4>Футболка из 100% хлопка</h4>
+                        <img src="img/t-shirt.png" width="230px" height="200px" alt="outfit">
+                        <p class="collection__bottom-card_price">800₽ <span>1200₽</span></p>
+                        <p class="collection__bottom-card_descr"> Lorem ipsum dolor sit amet consectetur</p>
+                        <button class="collection__bottom-card_btn buy-btn">
+                            В корзину
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="collection__bottom-content">
+                <div class="collection__bottom-cards">
+                    <div class="collection__bottom-card">
+                        <h4>Кофта простая</h4>
+                        <img src="img/sweater.jpeg" width="230px" height="200px" alt="outfit">
+                        <p class="collection__bottom-card_price">1000₽ <span>2300₽</span></p>
+                        <p class="collection__bottom-card_descr"> Lorem ipsum dolor sit amet consectetur</p>
+                        <button class="collection__bottom-card_btn buy-btn">
+                            В корзину
+                        </button>
+
+                    </div>
+                    <div class="collection__bottom-card">
+                        <h4>Кофта простая</h4>
+                        <img src="img/sweater.jpeg" width="230px" height="200px" alt="outfit">
+                        <p class="collection__bottom-card_price">1000₽ <span>2300₽</span></p>
+                        <p class="collection__bottom-card_descr"> Lorem ipsum dolor sit amet consectetur</p>
+                        <button class="collection__bottom-card_btn buy-btn">
+                            В корзину
+                        </button>
+
+                    </div>
+                    <div class="collection__bottom-card">
+                        <h4>Кофта простая</h4>
+                        <img src="img/sweater.jpeg" width="230px" height="200px" alt="outfit">
+                        <p class="collection__bottom-card_price">1000₽ <span>2300₽</span></p>
+                        <p class="collection__bottom-card_descr"> Lorem ipsum dolor sit amet consectetur</p>
+                        <button class="collection__bottom-card_btn buy-btn">
+                            В корзину
+                        </button>
+
+                    </div>
+                    <div class="collection__bottom-card">
+                        <h4>Кофта простая</h4>
+                        <img src="img/sweater.jpeg" width="230px" height="200px" alt="outfit">
+                        <p class="collection__bottom-card_price">1000₽ <span>2300₽</span></p>
+                        <p class="collection__bottom-card_descr"> Lorem ipsum dolor sit amet consectetur</p>
+                        <button class="collection__bottom-card_btn buy-btn">
+                            В корзину
+                        </button>
+
+                    </div>
+                    <div class="collection__bottom-card">
+                        <h4>Кофта простая</h4>
+                        <img src="img/sweater.jpeg" width="230px" height="200px" alt="outfit">
+                        <p class="collection__bottom-card_price">1000₽ <span>2300₽</span></p>
+                        <p class="collection__bottom-card_descr"> Lorem ipsum dolor sit amet consectetur</p>
+                        <button class="collection__bottom-card_btn buy-btn">
+                            В корзину
+                        </button>
+
+                    </div>
+                    <div class="collection__bottom-card">
+                        <h4>Кофта простая</h4>
+                        <img src="img/sweater.jpeg" width="230px" height="200px" alt="outfit">
+                        <p class="collection__bottom-card_price">1000₽ <span>2300₽</span></p>
+                        <p class="collection__bottom-card_descr"> Lorem ipsum dolor sit amet consectetur</p>
+                        <button class="collection__bottom-card_btn buy-btn">
+                            В корзину
+                        </button>
+
+                    </div>
+                    <div class="collection__bottom-card">
+                        <h4>Кофта простая</h4>
+                        <img src="img/sweater.jpeg" width="230px" height="200px" alt="outfit">
+                        <p class="collection__bottom-card_price">1000₽ <span>2300₽</span></p>
+                        <p class="collection__bottom-card_descr"> Lorem ipsum dolor sit amet consectetur</p>
+                        <button class="collection__bottom-card_btn buy-btn">
+                            В корзину
+                        </button>
+
+                    </div>
+                    <div class="collection__bottom-card">
+                        <h4>Кофта простая</h4>
+                        <img src="img/sweater.jpeg" width="230px" height="200px" alt="outfit">
+                        <p class="collection__bottom-card_price">1000₽ <span>2300₽</span></p>
+                        <p class="collection__bottom-card_descr"> Lorem ipsum dolor sit amet consectetur</p>
+                        <button class="collection__bottom-card_btn buy-btn">
+                            В корзину
+                        </button>
+
+                    </div>
+                    <div class="collection__bottom-card">
+                        <h4>Кофта простая</h4>
+                        <img src="img/sweater.jpeg" width="230px" height="200px" alt="outfit">
+                        <p class="collection__bottom-card_price">1000₽ <span>2300₽</span></p>
+                        <p class="collection__bottom-card_descr"> Lorem ipsum dolor sit amet consectetur</p>
+                        <button class="collection__bottom-card_btn buy-btn">
+                            В корзину
+                        </button>
+
+                    </div>
+                    <div class="collection__bottom-card">
+                        <h4>Кофта простая</h4>
+                        <img src="img/sweater.jpeg" width="230px" height="200px" alt="outfit">
+                        <p class="collection__bottom-card_price">1000₽ <span>2300₽</span></p>
+                        <p class="collection__bottom-card_descr"> Lorem ipsum dolor sit amet consectetur</p>
+                        <button class="collection__bottom-card_btn buy-btn">
+                            В корзину
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="collection__bottom-content">
+                <div class="collection__bottom-cards">
+                    <div class="collection__bottom-card">
+                        <h4>Джинсы удобные</h4>
+                        <img src="img/jeans.jpg" width="230px" height="200px" alt="outfit">
+                        <p class="collection__bottom-card_price">1000₽ <span>2300₽</span></p>
+                        <p class="collection__bottom-card_descr"> Lorem ipsum dolor sit amet consectetur</p>
+                        <button class="collection__bottom-card_btn buy-btn">
+                            В корзину
+                        </button>
+
+                    </div>
+                    <div class="collection__bottom-card">
+                        <h4>Джинсы удобные</h4>
+                        <img src="img/jeans.jpg" width="230px" height="200px" alt="outfit">
+                        <p class="collection__bottom-card_price">1000₽ <span>2300₽</span></p>
+                        <p class="collection__bottom-card_descr"> Lorem ipsum dolor sit amet consectetur</p>
+                        <button class="collection__bottom-card_btn buy-btn">
+                            В корзину
+                        </button>
+
+                    </div>
+                    <div class="collection__bottom-card">
+                        <h4>Джинсы удобные</h4>
+                        <img src="img/jeans.jpg" width="230px" height="200px" alt="outfit">
+                        <p class="collection__bottom-card_price">1000₽ <span>2300₽</span></p>
+                        <p class="collection__bottom-card_descr"> Lorem ipsum dolor sit amet consectetur</p>
+                        <button class="collection__bottom-card_btn buy-btn">
+                            В корзину
+                        </button>
+
+                    </div>
+                    <div class="collection__bottom-card">
+                        <h4>Джинсы удобные</h4>
+                        <img src="img/jeans.jpg" width="230px" height="200px" alt="outfit">
+                        <p class="collection__bottom-card_price">1000₽ <span>2300₽</span></p>
+                        <p class="collection__bottom-card_descr"> Lorem ipsum dolor sit amet consectetur</p>
+                        <button class="collection__bottom-card_btn buy-btn">
+                            В корзину
+                        </button>
+
+                    </div>
+                    <div class="collection__bottom-card">
+                        <h4>Джинсы удобные</h4>
+                        <img src="img/jeans.jpg" width="230px" height="200px" alt="outfit">
+                        <p class="collection__bottom-card_price">1000₽ <span>2300₽</span></p>
+                        <p class="collection__bottom-card_descr"> Lorem ipsum dolor sit amet consectetur</p>
+                        <button class="collection__bottom-card_btn buy-btn">
+                            В корзину
+                        </button>
+
+                    </div>
+                    <div class="collection__bottom-card">
+                        <h4>Джинсы удобные</h4>
+                        <img src="img/jeans.jpg" width="230px" height="200px" alt="outfit">
+                        <p class="collection__bottom-card_price">1000₽ <span>2300₽</span></p>
+                        <p class="collection__bottom-card_descr"> Lorem ipsum dolor sit amet consectetur</p>
+                        <button class="collection__bottom-card_btn buy-btn">
+                            В корзину
+                        </button>
+
+                    </div>
+                    <div class="collection__bottom-card">
+                        <h4>Джинсы удобные</h4>
+                        <img src="img/jeans.jpg" width="230px" height="200px" alt="outfit">
+                        <p class="collection__bottom-card_price">1000₽ <span>2300₽</span></p>
+                        <p class="collection__bottom-card_descr"> Lorem ipsum dolor sit amet consectetur</p>
+                        <button class="collection__bottom-card_btn buy-btn">
+                            В корзину
+                        </button>
+
+                    </div>
+                    <div class="collection__bottom-card">
+                        <h4>Джинсы удобные</h4>
+                        <img src="img/jeans.jpg" width="230px" height="200px" alt="outfit">
+                        <p class="collection__bottom-card_price">1000₽ <span>2300₽</span></p>
+                        <p class="collection__bottom-card_descr"> Lorem ipsum dolor sit amet consectetur</p>
+                        <button class="collection__bottom-card_btn buy-btn">
+                            В корзину
+                        </button>
+
+                    </div>
+                    <div class="collection__bottom-card">
+                        <h4>Джинсы удобные</h4>
+                        <img src="img/jeans.jpg" width="230px" height="200px" alt="outfit">
+                        <p class="collection__bottom-card_price">1000₽ <span>2300₽</span></p>
+                        <p class="collection__bottom-card_descr"> Lorem ipsum dolor sit amet consectetur</p>
+                        <button class="collection__bottom-card_btn buy-btn">
+                            В корзину
+                        </button>
+
+                    </div>
+                    <div class="collection__bottom-card">
+                        <h4>Джинсы удобные</h4>
+                        <img src="img/jeans.jpg" width="230px" height="200px" alt="outfit">
+                        <p class="collection__bottom-card_price">1000₽ <span>2300₽</span></p>
+                        <p class="collection__bottom-card_descr"> Lorem ipsum dolor sit amet consectetur</p>
+                        <button class="collection__bottom-card_btn buy-btn">
+                            В корзину
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+       
+
+
+        </div>
     </section>
-    <section class="clothes">
-        <nav class="clothes__menu">
-            <li class="clothes__menu-list"> 
-                <a href="#" class="clothes__menu-item">
-
-                </a>
-            </li>
-            <li class="clothes__menu-list"> 
-                <a href="#" class="clothes__menu-item">
-
-                </a>
-            </li>
-            <li class="clothes__menu-list"> 
-                <a href="#" class="clothes__menu-item">
-
-                </a>
-            </li>
-            <li class="clothes__menu-list"> 
-                <a href="#" class="clothes__menu-item">
-
-                </a>
-            </li>
-
-        </nav>
-        
-    </section>
-    <!-- <script defer src="js/simple-adaptive-slider.min.js"></script> -->
     <script src="js/main.js"></script>
 </body>
 
