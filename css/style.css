@@ -22,6 +22,25 @@
     align-items: center;
 }
 
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-link {
+  display: inline-block;
+}
+
+.logo-name {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  font-size: 40px;
+}
+
 .header__menu-right {
     height: 39px;
     display: flex;
@@ -84,14 +103,14 @@ outline: none;
 .search-btn::before {
   content: "";
   position: absolute;
-  top: 58%; /* Изменено */
-  left: 65%; /* Изменено */
+  top: 55%; 
+  left: 65%; 
   transform: translateY(-50%);
   width: 4px;
   height: 8px;
   background-color: #333;
   transform-origin: bottom;
-  transform: rotate(-38deg);
+  transform: rotate(-42deg);
 }
 
  
@@ -388,6 +407,85 @@ outline: none;
   cursor: pointer;
 }
 
+/* табы */
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: rgb(191, 188, 188);
+  border: none;
+  outline: none;
+  border-radius: 8px 8px 0 0;
+  
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #fff;
+}
+
+/* Style the tab content */
+.tabcontent {
+  /* display: none; */
+  padding: 6px 12px;
+  border-top: none;
+}
+
+#London {
+  display: block; 
+}
+
+
+.footer__top {
+  padding: 100px 0 60px;
+  background-color: rgb(43, 43, 43);
+  color:#fff;
+}
+
+.footer__top-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.footer__top_subtitle {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.logo-bottom {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  font-size: 28px;
+}
+
+.footer__top-info_text {
+  max-width: 200px;
+}
+
+.footer__top-contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__top-contacts a {
+  color: inherit;
+}
+
+.footer__top-address {
+  max-width: 200px;
+}
 
 
 

@@ -1,5 +1,5 @@
 function selectCategory(category) {
-    var concept = category;
+    let concept = category;
     document.getElementById('search_concept').textContent = concept;
   }
   
@@ -56,6 +56,30 @@ document.querySelector('.slideshow-container').addEventListener('mouseenter', fu
 document.querySelector('.slideshow-container').addEventListener('mouseleave', function() {
     slideInterval = setInterval(autoSlide, 3000);
 });
+
+// Табы 
+
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+window.onload = function() {
+  // Устанавливаем активную вкладку по умолчанию
+  document.getElementById('London').style.display = 'block';
+  document.querySelector('.tablinks.active').classList.remove('active'); // Удаляем класс active у всех кнопок
+  document.querySelector('.tablinks').classList.add('active'); // Устанавливаем класс active для первой кнопки
+}
+
 
 
 
