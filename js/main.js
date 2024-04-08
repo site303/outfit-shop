@@ -59,23 +59,22 @@ document.querySelector('.slideshow-container').addEventListener('mouseleave', fu
 
 // Табы 
 
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
+function chooseDress(evt, dressName) {
+  let tabcontent = document.getElementsByClassName("tabcontent");
+  for (let i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
-  tablinks = document.getElementsByClassName("tablinks");
+  let tablinks = document.getElementsByClassName("tablinks");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
+  document.getElementById(dressName).style.display = "block";
+  evt.currentTarget.className += "active";
 }
 
 window.onload = function() {
-  // Устанавливаем активную вкладку по умолчанию
-  document.getElementById('London').style.display = 'block';
+  // Устанавить активную вкладку по умолчанию
+  document.getElementById('T-shirts').style.display = 'block';
   document.querySelector('.tablinks.active').classList.remove('active'); // Удаляем класс active у всех кнопок
   document.querySelector('.tablinks').classList.add('active'); // Устанавливаем класс active для первой кнопки
 }
