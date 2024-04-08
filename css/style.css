@@ -1,3 +1,6 @@
+body {
+  position: relative;
+}
 
 .container {
     max-width: 1440px;
@@ -17,7 +20,13 @@ background: linear-gradient(0deg, rgba(212,212,212,1) -1%, rgba(122,122,122,1) 9
 /* background-color: #b0b0b0; */
   padding: 4px 0;
   height: 90px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 80;
+  /* background: linear-gradient(180deg, #D8D4CA 0%, rgba(217, 217, 217, 0) 100%); */
   }
+
 
 .header__menu {
     display: flex;
@@ -79,7 +88,7 @@ outline: none;
 }
 
 .search-btn {
-  background-color: rgb(143 143 143);
+  background-color: rgb(186, 184, 184);
   border: none;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -91,7 +100,7 @@ outline: none;
 }
 
 .search-btn:hover {
-  background-color: #e6e4e4;
+  background-color: rgb(208, 207, 207);
 }
 
 /* Стили для псевдоэлемента, создающего значок лупы */
@@ -175,7 +184,7 @@ outline: none;
 
 .slideshow-container {
   width: 100%;
-  height: 89vh;
+  height: 100vh;
   position: relative;
   overflow: hidden; 
 }
@@ -239,7 +248,7 @@ outline: none;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
-  top: 0;
+  bottom: 0;
 }
 
 .dots {
@@ -270,6 +279,22 @@ outline: none;
   animation-duration: 1.5s;
 }
 
+.slide-blur {
+  position: relative;
+}
+
+.slide-blur::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; 
+  /* -webkit-mask-image: linear-gradient(to bottom, white 0%, transparent 100%);
+  mask-image: linear-gradient(to bottom, white 0%, transparent 100%); */
+  backdrop-filter: blur(6px);
+  z-index: 20;
+}
 
 /* раздел коллекция */
 
@@ -448,7 +473,7 @@ outline: none;
   border-top: none;
 }
 
-#London {
+#T-shirt {
   display: block; 
 }
 
