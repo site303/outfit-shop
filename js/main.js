@@ -41,11 +41,9 @@ function showSlides(n) {
 }
 
 // Автоматическое переключение слайдов каждые 3 секунды
-function autoSlide() {
-    plusSlides(1);
-}
-
-// slideInterval = setInterval(autoSlide, 3000);
+// function autoSlide() {
+//     plusSlides(1);
+// }
 
 // Остановить автоматическое переключение при наведении на слайдер
 document.querySelector('.slideshow-container').addEventListener('mouseenter', function() {
@@ -74,7 +72,7 @@ function chooseDress(evt, dressName) {
 
 window.onload = function() {
   // Устанавить активную вкладку по умолчанию
-  document.getElementById('T-shirts').style.display = 'block';
+  document.getElementById('T-shirt').style.display = 'block';
   document.querySelector('.tablinks.active').classList.remove('active'); // Удаляем класс active у всех кнопок
   document.querySelector('.tablinks').classList.add('active'); // Устанавливаем класс active для первой кнопки
 }
