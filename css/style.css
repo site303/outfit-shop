@@ -769,7 +769,7 @@ outline: none;
 .slide-text {
     top: 77%;
     left: 51%;
-    font-size: 23px;
+    /* font-size: 23px; */
 }
 
   .footer__top-container {
@@ -806,11 +806,11 @@ outline: none;
 
   .dropbtn {
     width: 100%;
-    height: 50px;
+    height: 38px;
   }
 
   input[type="text"] {
-    height: 50px;
+    height: 38px;
     border-radius: 4px 0px 0px 4px;
   }
 
